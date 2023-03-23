@@ -7,6 +7,14 @@
 3. To format YAML output to 4 indents with Terraform when rendering a YAML template file, you can use the templatefile function to render the template and then use the indent function to add 4 spaces of indentation to each line.
 
 # NOTE: we will be using terraform providers below:
-#  terraform  >= 0.14.5
-# local >= 2.0.0
-# tls >= 3.0.0
+terraform  >= 0.14.5
+local >= 2.0.0
+tls >= 3.0.0
+
+To Execute the code run the following command:
+
+Terraform init  - This will initialize your Terraform working directory and download any required plugins, including the local provider plugin.
+
+Terraform plan - This will show you all resources that terraform will create from your code for you to review.
+
+Terraform apply --auto-approve - This will provision the terraform code defined in your terraform resources.
